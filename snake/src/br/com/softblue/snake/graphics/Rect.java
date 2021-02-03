@@ -1,4 +1,4 @@
-package snake;
+package br.com.softblue.snake.graphics;
 
 import java.awt.Dimension;
 import java.awt.Graphics;

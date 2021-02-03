@@ -1,4 +1,6 @@
-package snake;
+package br.com.softblue.snake;
+
+import br.com.softblue.snake.core.Game;
 
 public class Application {
 

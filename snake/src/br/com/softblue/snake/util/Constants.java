@@ -1,4 +1,4 @@
-package snake;
+package br.com.softblue.snake.util;
 
 import java.awt.Color;
 

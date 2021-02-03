@@ -1,4 +1,8 @@
-package snake;
+package br.com.softblue.snake.core;
+
+import br.com.softblue.snake.graphics.Renderer;
+import br.com.softblue.snake.scene.Background;
+import br.com.softblue.snake.scene.Snake;
 
 public class Game {
 

@@ -1,4 +1,7 @@
-package snake;
+package br.com.softblue.snake.scene;
+
+import br.com.softblue.snake.graphics.Rect;
+import br.com.softblue.snake.util.Constants;
 
 public class Background extends Rect {
 
