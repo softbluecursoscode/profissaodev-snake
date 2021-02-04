@@ -3,31 +3,38 @@ package br.com.softblue.snake.graphics;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Point;
+import java.awt.Rectangle;
 
 public class Rect extends Drawable {
-	private Point location;
-	private Dimension dimension;
+	private Rectangle rectangle;
 	
 	public Rect(int x, int y, int width, int height) {
-		this.location = new Point(x, y);
-		this.dimension = new Dimension(width, height);
+		rectangle = new Rectangle(x, y, width, height);
 	}
 	
 	public Rect(Point location, Dimension dimension) {
-		this.location = location;
-		this.dimension = dimension;
+		rectangle = new Rectangle(location, dimension);
 	}
 
 	@Override
 	public void draw(Graphics g) {
-		g.fillRect((int) location.getX(), (int) location.getY(), (int) dimension.getWidth(), (int) dimension.getHeight());
+		g.fillRect(
+				(int) rectangle.getLocation().getX(), 
+				(int) rectangle.getLocation().getY(), 
+				(int) rectangle.getSize().getWidth(), 
+				(int) rectangle.getSize().getHeight()
+		);
+	}
+	
+	public boolean intersects(Rect other) {
+		return rectangle.intersects(other.rectangle);
 	}
 	
 	public Point getLocation() {
-		return location;
+		return rectangle.getLocation();
 	}
 
 	public Dimension getDimension() {
-		return dimension;
+		return rectangle.getSize();
 	}
 }
