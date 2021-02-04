@@ -11,6 +11,6 @@ public class Constants {
 	public static final Color SNAKE_COLOR = Color.WHITE;
 	public static final int SNAKE_PIECE_SIZE = 5;
 	public static final int SNAKE_SIZE = 20;
-	public static final int SNAKE_INITIAL_X = 120;
-	public static final int SNAKE_INITIAL_Y = 120;
+	public static final int SNAKE_START_X = 170;
+	public static final int SNAKE_START_Y = 120;
 }

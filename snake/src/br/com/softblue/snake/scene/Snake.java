@@ -13,7 +13,7 @@ public class Snake extends Shape {
 		super(Constants.SNAKE_COLOR);
 
 		direction = Direction.NONE;
-		Rect rect = new Rect(Constants.SNAKE_INITIAL_X, Constants.SNAKE_INITIAL_Y, Constants.SNAKE_PIECE_SIZE,
+		Rect rect = new Rect(Constants.SNAKE_START_X, Constants.SNAKE_START_Y, Constants.SNAKE_PIECE_SIZE,
 				Constants.SNAKE_PIECE_SIZE);
 		addRect(rect);
 
