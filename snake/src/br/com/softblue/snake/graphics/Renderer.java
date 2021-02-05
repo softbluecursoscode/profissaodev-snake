@@ -12,15 +12,15 @@ public class Renderer {
 		drawables = new ArrayList<>();
 	}
 	
-	public void add(Drawable drawable) {
+	public synchronized void add(Drawable drawable) {
 		drawables.add(drawable);
 	}
 	
-	public void remove(Drawable drawable) {
+	public synchronized void remove(Drawable drawable) {
 		drawables.remove(drawable);
 	}
 	
-	public void render(Graphics g) {
+	public synchronized void render(Graphics g) {
 		for (Drawable d : drawables) {
 			g.setColor(d.getColor());
 			d.draw(g);

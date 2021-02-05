@@ -50,7 +50,7 @@ public class Shape extends Drawable {
 		return rects.get(0);
 	}
 	
-	public Rect getLAstRect() {
+	public Rect getLastRect() {
 		return rects.get(rects.size() - 1);
 	}
 	
